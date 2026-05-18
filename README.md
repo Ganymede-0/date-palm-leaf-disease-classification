@@ -4,7 +4,7 @@ A computer vision project that fine-tunes two modern image classifiers — **Swi
 
 The project also implements a **leakage-aware data split** built on top of self-supervised image embeddings, so visually near-duplicate leaf images cannot be split across train / validation / test.
  
----
+-----
 
 ## Motivation
 
