@@ -21,6 +21,8 @@ Both are trained under the same data pipeline so their results are directly comp
 
 ## Dataset
 
+Link: https://data.mendeley.com/datasets/g684ghfxvg/2
+
 This work uses the publicly published **Infected Date Palm Leaves Dataset** (Namoun et al., 2024 — *Data in Brief*).
 
 - **Classes (9):** potassium deficiency, manganese deficiency, magnesium deficiency, black scorch, leaf spots, fusarium wilt, rachis blight, *Parlatoria blanchardi* (pest), and healthy.
@@ -77,20 +79,20 @@ On the held-out test split:
 
 ---
 
-## Repository Structure
 
-```
-.
-├── README.md
-├── requirements.txt
-├── notebooks/
-│   ├── ComputerVisionProject_SwinTransformer.ipynb   # data prep + Swin Transformer
-│   └── ConvNeXt_Tiny.ipynb                           # ConvNeXt-Tiny experiments
-└── (optional, not tracked)
-    ├── data/                  # local copy of the dataset
-    ├── splits/                # the saved train/val/test CSVs
-    └── checkpoints/           # best_*.pth model weights
-```
+## Results
+
+> Performance Comparison Before and After Class Weights
+
+| Model | Configuration | Accuracy | Precision | Recall | F1 Score |
+|-------|---------------|----------|-----------|--------|----------|
+| Swin Transformer | No class weights | 95.33% | 89% | 93% | 91% |
+| ConvNeXt-Tiny | No class weights | 96.88% | 94% | 92% | 93% |
+| Swin Transformer | Class weights | 96.67% | 94% | 96% | 95% |
+| ConvNeXt-Tiny | Class weights | 97.1% | 94% | 97% | 95% |
+
+A confusion matrix and a panel of correct/incorrect predictions are produced at the end of each notebook.
+---
 
 The notebooks are written for **Google Colab + Google Drive**. Paths like `/content/drive/MyDrive/Computer Vision Project/...` appear throughout — change these to your own paths (Drive or local) before running.
 
