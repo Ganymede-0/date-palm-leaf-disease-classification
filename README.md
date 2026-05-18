@@ -3,7 +3,7 @@
 A computer vision project that fine-tunes two modern image classifiers — **Swin Transformer (`swin_tiny_patch4_window7_224`)** and **ConvNeXt-Tiny (`convnext_tiny`)** — to identify diseases on date palm (*Phoenix dactylifera*) leaves from RGB images.
 
 The project also implements a **leakage-aware data split** built on top of self-supervised image embeddings, so visually near-duplicate leaf images cannot be split across train / validation / test.
-
+ 
 ---
 
 ## Motivation
