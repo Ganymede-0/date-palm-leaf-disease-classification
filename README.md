@@ -150,6 +150,6 @@ For GPU training, install a PyTorch build that matches your CUDA version from th
 ---
 
 
-## License
+## License 
 
 This repository is released under the MIT License — see `LICENSE` for details. The dataset is governed by the license stated by its original authors; consult the dataset publication before redistribution.
