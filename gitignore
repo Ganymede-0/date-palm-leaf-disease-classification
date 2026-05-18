@@ -1,0 +1,56 @@
+# =============================================================
+# Date Palm Leaf Disease Classification — .gitignore
+# =============================================================
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.Python
+build/
+dist/
+*.egg
+
+# ---- Virtual envs ----
+.venv/
+venv/
+env/
+.envrc
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---- IDE / editor ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# ---- Data and large artifacts (do NOT commit) ----
+data/
+datasets/
+*.zip
+*.tar
+*.tar.gz
+
+# ---- Model weights ----
+checkpoints/
+*.pth
+*.pt
+*.onnx
+*.safetensors
+
+# ---- Generated outputs ----
+outputs/
+results/
+runs/
+wandb/
+logs/
+*.log
+
+# ---- Embeddings & cached splits (regenerate from notebooks) ----
+*.npy
+splits/
